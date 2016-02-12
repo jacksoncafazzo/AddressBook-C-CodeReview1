@@ -1,0 +1,11 @@
+<ol>
+@foreach (var friend in Model)
+{
+  <li><h3><a href="/friend/@friend.GetId()">@friend.GetName()</a></h3></li>
+}
+</ol>
+<ul>
+<h2>Would you like to add another?</h2>
+@Html.Partial("friend-form.cshtml")
+<a href="/friend/new">Add another friend</a>
+<ul>
