@@ -1,5 +1,8 @@
+@Html.Partial("header.cshtml")
 <h3>Your friend @Model.GetName()</h3>
 <ul>
 <li>Lives at: @Model.GetAddress()</li>
+<li>and you remember them by: @Model.GetDescription()</li>
 <li>and can be reached at: @Model.GetPhone()</li>
+<li>or by email here: <a href="mailto:@Model.GetEmail()">@Model.GetEmail()</a></li>
 <h3><a href="/friends_list">Go back to list of friends</a></h3>

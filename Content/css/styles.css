@@ -1,0 +1,83 @@
+body {
+  background-color: #00BCD4;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+h1 {
+  background-color: #00ACC1;
+  color: white;
+  text-shadow: 3px 3px 3px black;
+  text-align: center;
+}
+
+h3 {
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  text-align: center;
+}
+
+/*.add-new-friend-button {
+  background-color: #B2EBF2;
+  border-style: outset;
+  border-color: #006064;
+  border-width: thick;
+  text-align: center;
+}*/
+
+.add-new-friend-button {
+	background-color:#0097A7;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #E0F7FA;
+	display:inline-block;
+	cursor:pointer;
+	color:#E0F7FA;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
+.add-new-friend-button:hover {
+	background-color:#B2EBF2;
+  color: #0097A7;
+}
+.add-new-friend-button:active {
+	position:relative;
+	top:1px;
+}
+
+.clear-all-friends-button {
+	background-color:#0097A7;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #E0F7FA;
+	display:inline-block;
+	cursor:pointer;
+	color:#E0F7FA;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
+.clear-all-friends-button:hover {
+	background-color:#B2EBF2;
+  color: #0097A7;
+}
+.clear-all-friends-button:active {
+	position:relative;
+	top:1px;
+}
+
+.friend-form {
+  color: white;
+}
+
+a {
+  color: #E0F7FA;
+  text-decoration: none;
+}

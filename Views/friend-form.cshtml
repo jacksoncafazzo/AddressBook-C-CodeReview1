@@ -1,11 +1,23 @@
+@Html.Partial("header.cshtml")
 <h3>Tell me about your friend:</h3>
-
-<form action = "/friend/new" method="post">
-  <label for = "friend-name">Name: </label>
+<form action="/friend/new" class="friend-form" method="post">
+  <label for="friend-name">Name:</label>
   <input id="friend-name" name="friend-name" type="text">
-  <label for = "friend-phone">Phone Number: </label>
-  <input id="friend-phone" name="friend-phone" type="number">
-  <label for = "friend-address">Address: </label>
+  <br>
+  <label for="friend-desc">Something you remember them by:</label>
+  <input for="friend-desc" name="friend-desc" type="text">
+  <br>
+  <label for="friend-phone">Phone Number:</label>
+  <input id="friend-phone" name="friend-phone" type="text">
+  <br>
+  <label for="friend-address">Address:</label>
   <input id="friend-address" name="friend-address" type="text">
-  <button type="submit">Add New Friend</button>
-</from>
+  <br>
+  <label for="friend-email">Email:</label>
+  <input id="friend-email" name="friend-email" type="text">
+  <br>
+  <button type="submit" class="add-new-friend-button">Add New Friend</button>
+</form>
+<form action="/clear-all-friends">
+  <button type="submit" class="clear-friends-button">Clear All Friends</button>
+</form>

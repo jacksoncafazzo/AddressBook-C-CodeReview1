@@ -20,14 +20,17 @@ namespace AddressBook
         return View["friend-list.cshtml", allContacts];
       };
       Post["/friend/new"] = _ => {
-        int phoneInt = int.Parse(Request.Form["friend-phone"]);
-        Contact newContact = new Contact(Request.Form["friend-name"], phoneInt, Request.Form["friend-address"]);
+        Contact newContact = new Contact(Request.Form["friend-name"], Request.Form["friend-desc"], Request.Form["friend-address"], Request.Form["friend-phone"], Request.Form["friend-email"]);
         List<Contact> allContacts = Contact.GetAll();
         return View["friend-list.cshtml", allContacts];
       };
       Get["/friend/{id}"] = parameters => {
         var selectedContact = Contact.Find(parameters.id);
         return View["friend.cshtml", selectedContact];
+      };
+      Get["/clear-all-friends"] = _ => {
+        Contact.ClearAll();
+        return View["friends-cleared.cshtml"];
       };
     }
   }

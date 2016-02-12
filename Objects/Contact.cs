@@ -5,16 +5,20 @@ namespace Contacts.Objects
   public class Contact
   {
     private string _name;
-    private int _phone;
+    private string _description;
+    private string _phone;
     private string _address;
+    private string _email;
     private int _id;
     private static List<Contact> _instances = new List<Contact> {};
 
-    public Contact(string name, int phone, string address)
+    public Contact(string name, string description, string phone, string address, string email)
     {
       _name = name;
+      _description = description;
       _phone = phone;
       _address = address;
+      _email = email;
       _instances.Add(this);
       _id = _instances.Count;
     }
@@ -27,11 +31,19 @@ namespace Contacts.Objects
     {
       _name = newName;
     }
-    public int GetPhone()
+    public string GetDescription()
+    {
+      return _description;
+    }
+    public void SetDescription(string newDescription)
+    {
+      _description = newDescription;
+    }
+    public string GetPhone()
     {
       return _phone;
     }
-    public void SetPhone(int newPhone)
+    public void SetPhone(string newPhone)
     {
       _phone = newPhone;
     }
@@ -42,6 +54,14 @@ namespace Contacts.Objects
     public void SetAddress(string newAddress)
     {
       _address = newAddress;
+    }
+    public string GetEmail()
+    {
+      return _email;
+    }
+    public void SetEmail(string newEmail)
+    {
+      _email = newEmail;
     }
     public int GetId()
     {
