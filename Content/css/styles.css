@@ -1,7 +1,10 @@
 body {
   background-color: #00BCD4;
   font-family: 'Open Sans', sans-serif;
-
+  background-image: url("../img/cloud-background.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
 }
 
 h1 {
@@ -24,6 +27,55 @@ h3 {
   border-width: thick;
   text-align: center;
 }*/
+
+.view-all-friend-button {
+	background-color:#0097A7;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #E0F7FA;
+	display:inline-block;
+	cursor:pointer;
+	color:#E0F7FA;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
+.view-all-friend-button:hover {
+	background-color:#B2EBF2;
+  color: #0097A7;
+}
+.view-all-friend-button:active {
+	position:relative;
+	top:1px;
+}
+
+.home-button {
+	background-color:#0097A7;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #E0F7FA;
+	display:inline-block;
+	cursor:pointer;
+	color:#E0F7FA;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
+.home-button:hover {
+	background-color:#B2EBF2;
+  color: #0097A7;
+}
+.home-button:active {
+	position:relative;
+	top:1px;
+}
+
 
 .add-new-friend-button {
 	background-color:#0097A7;
@@ -95,16 +147,23 @@ h3 {
 }
 
 .friends-list {
-  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-shadow: 2px 2px 1px white;
 }
 
 .side-bar {
   width: 25%;
   min-height: 100px;
-  background-color: red;
 }
 
 a {
   color: #E0F7FA;
   text-decoration: none;
+  text-shadow: 2px 2px 1px black
+}
+
+a:hover {
+  text-decoration: none;
+  color: #00E5FF;
 }
