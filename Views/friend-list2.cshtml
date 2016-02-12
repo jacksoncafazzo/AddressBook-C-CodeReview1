@@ -1,9 +1,0 @@
-@if (@Model.Count == 0)
-{
-  <h3>No categories have been added!</h3>
-}
-@foreach (var friend in Model)
-{
-  <h3><a href="/friend/@friend.GetId()">@friend.GetName()</a></h3>
-}
-<a href="/friend/new">Add another friend</a>

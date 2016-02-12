@@ -50,7 +50,7 @@ h3 {
 }
 
 .clear-all-friends-button {
-	background-color:#0097A7;
+	background-color:#D32F2F;
 	-moz-border-radius:28px;
 	-webkit-border-radius:28px;
 	border-radius:28px;
@@ -73,8 +73,16 @@ h3 {
 	top:1px;
 }
 
+
+
 .friend-form {
   color: white;
+}
+
+input {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
 }
 
 a {
