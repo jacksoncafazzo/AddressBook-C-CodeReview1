@@ -32,6 +32,11 @@ namespace AddressBook
         Contact.ClearAll();
         return View["friends-cleared.cshtml"];
       };
+      Get["/clear_friend/{id}"] = parameters => {
+        List<Contact> allContacts = Contact.GetAll();
+        allContacts.RemoveAt(parameters.id - 1);
+        return View["friend-list.cshtml", allContacts];
+      };
     }
   }
 }
