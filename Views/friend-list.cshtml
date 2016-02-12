@@ -1,10 +1,19 @@
-<ol>
-@foreach (var friend in Model)
-{
-  <li><h3><a href="/friend/@friend.GetId()">@friend.GetName()</a></h3></li>
-}
-</ol>
-<ul>
+<h1>Your list of friends</h1>
+<div class="row">
+  <div class="col-md-4 col-lg-4 side-bar">
+  </div>
+  <div class="col-md-6 col-lg-6">
+    <ol>
+    @foreach (var friend in Model)
+    {
+      <li class="friends-list"><h3><a href="/friend/@friend.GetId()">@friend.GetName()</a></h3></li>
+    }
+    </ol>
+    <ul>
+  </div>
+  <div class="col-md-4 col-lg-4 side-bar">
+  </div>
+</div>
 <h3>Would you like to add another friend?</h3>
 @Html.Partial("friend-form.cshtml")
 <ul>

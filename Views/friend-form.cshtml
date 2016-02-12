@@ -1,27 +1,38 @@
 @Html.Partial("header.cshtml")
 <h3>Tell me about your friend:</h3>
 <form action="/friend/new" class="friend-form" method="post">
-  <label for="friend-name">Name:</label>
-  <input id="friend-name" name="friend-name" type="text">
-  <br>
-  <label for="friend-desc">Something you remember them by:</label>
-  <input for="friend-desc" name="friend-desc" type="text">
-  <br>
-  <label for="friend-phone">Phone Number:</label>
-  <input id="friend-phone" name="friend-phone" type="text">
-  <br>
-  <label for="friend-address">Address:</label>
-  <input id="friend-address" name="friend-address" type="text">
-  <br>
-  <label for="friend-email">Email:</label>
-  <input id="friend-email" name="friend-email" type="text">
-  <br>
+  <div class="row">
+    <div class="col-md-4 col-sm-6 col-xs-6 col-lg-4">
+      <label for="friend-name">Name:</label>
+      <br>
+      <label for="friend-desc">Point of reference:</label>
+      <br>
+      <label for="friend-phone">Phone Number:</label>
+      <br>
+      <label for="friend-address">Address:</label>
+      <br>
+      <label for="friend-email">Email:</label>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-6 col-lg-4">
+      <input id="friend-name" name="friend-name" class="friend-field" type="text">
+      <br>
+      <input for="friend-desc" name="friend-desc" class="friend-field" type="text">
+      <br>
+      <input id="friend-phone" name="friend-phone" class="friend-field" type="text">
+      <br>
+      <input id="friend-address" name="friend-address" class="friend-field" type="text">
+      <br>
+      <input id="friend-email" name="friend-email" class="friend-field" type="text">
+    </div>
+  </div>
+<div class="row button-row">
   <div class="col-xs-6 col-sm-6 col-md-5">
     <button type="submit" class="add-new-friend-button">Add New Friend</button>
   </div>
 </form>
-<div class="col-xs-6 col-sm-6 col-md-5">
-  <form action="/clear-all-friends">
-  <button type="submit" class="clear-all-friends-button">Clear All Friends</button>
-</form>
+  <div class="col-xs-6 col-sm-6 col-md-5">
+    <form action="/clear-all-friends">
+      <button type="submit" class="clear-all-friends-button">Clear All Friends</button>
+    </form>
+  </div>
 </div>

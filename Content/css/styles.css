@@ -50,7 +50,7 @@ h3 {
 }
 
 .clear-all-friends-button {
-	background-color:#D32F2F;
+	background-color: #00838F;
 	-moz-border-radius:28px;
 	-webkit-border-radius:28px;
 	border-radius:28px;
@@ -65,24 +65,43 @@ h3 {
 }
 
 .clear-all-friends-button:hover {
-	background-color:#B2EBF2;
-  color: #0097A7;
+  background-color:#D32F2F;
+
+  color: white;
 }
 .clear-all-friends-button:active {
+  background-color:#B2EBF2;
 	position:relative;
 	top:1px;
 }
 
-
+.button-row {
+  padding-top: 15px;
+}
 
 .friend-form {
   color: white;
+  text-shadow: 2px 2px 1px #006064;
+  text-align: right;
 }
 
-input {
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
+.friend-field {
+  color: black;
+  text-shadow: 2px 2px 2px solid black;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  text-align: left;
+}
+
+.friends-list {
+  text-align: center;
+}
+
+.side-bar {
+  width: 25%;
+  min-height: 100px;
+  background-color: red;
 }
 
 a {
