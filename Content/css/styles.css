@@ -133,6 +133,7 @@ h3 {
 
 .friend-form {
   color: white;
+  font-size: 1.5em;
   text-shadow: 2px 2px 1px #006064;
   text-align: right;
 }
@@ -140,9 +141,9 @@ h3 {
 .friend-field {
   color: black;
   text-shadow: 2px 2px 2px solid black;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  border-radius: 7px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
   text-align: left;
 }
 
