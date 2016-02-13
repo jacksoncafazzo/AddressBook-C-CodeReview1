@@ -67,6 +67,10 @@ namespace Contacts.Objects
     {
       return _id;
     }
+    public void SetId(int newId)
+    {
+      _id = newId;
+    }
     public static List<Contact> GetAll()
     {
       return _instances;
@@ -78,6 +82,13 @@ namespace Contacts.Objects
     public static Contact Find(int searchId)
     {
       return _instances[searchId-1];
+    }
+    public static void RefreshIds(List<Contact> contacts)
+    {
+      foreach (Contact friend in contacts)
+      {
+        friend.SetId(_instances.IndexOf(friend) + 1);
+      }
     }
   }
 }

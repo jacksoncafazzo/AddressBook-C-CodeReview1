@@ -1,6 +1,18 @@
 @Html.Partial("header.cshtml")
+<h3>Address book cleared!</h3>
+<div class="row">
+  <div class="col-xs-3 col-sm-4 col-md-4 col-lg-5 sidebar">
 
-<h3>You've cleared all your friends!</h3>
-<form action="/add_new_friend">
-  <button type="submit" class="add-new-friend-button">Add A Friend</button>
-</form>
+  </div>
+  <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 button-col">
+    <form action="/add_new_friend">
+      <button type="submit" class="add-new-friend-button">Add A Friend</button>
+    </form>
+    <form action="/">
+      <button type="submit" class="home-button">Back to Home</button>
+    </form>
+  </div>
+  <div class="col-xs-3 col-sm-4 col-md-4 col-lg-5 sidebar">
+
+  </div>
+</div>

@@ -129,6 +129,7 @@ h3 {
 
 .button-row {
   padding-top: 15px;
+  text-align: center;
 }
 
 .friend-form {
@@ -158,6 +159,10 @@ h3 {
   min-height: 100px;
 }
 
+.button-col {
+  text-align: center;
+}
+
 a {
   color: #E0F7FA;
   text-decoration: none;
@@ -167,4 +172,10 @@ a {
 a:hover {
   text-decoration: none;
   color: #00E5FF;
+}
+
+a:active {
+  text-decoration: none;
+  color: #00B8D4;
+
 }

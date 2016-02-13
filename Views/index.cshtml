@@ -1,15 +1,32 @@
 @Html.Partial("header.cshtml")
 <div class="container">
   <div class="row">
-    <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6">
+    <div class="col-xs-2 col-sm-2 col-md-3 col-lg-4 sidebar">
+
+    </div>
+    <div class="col-xs-8 col-sm-8 col-md-6 col-lg-4">
       <h1>Hello and welcome to the address book!</h1>
+    </div>
+    <div class="col-xs-2 col-sm-2 col-md-3 col-lg-4 sidebar">
+
+    </div>
+  </div>
+  <div class="row button-row">
+    <div class="col-xs-1 col-sm-2 col-md-2 col-lg-4 sidebar">
+
+    </div>
+    <div class="col-xs-5 col-sm-4 col-md-4 col-lg-3">
       <form action="/friends_list">
         <button class="view-all-friend-button" type="submit">View all friends</a></button>
       </form>
+    </div>
+    <div class="col-xs-5 col-sm-4 col-md-4 col-lg-3">
       <form action="/add_new_friend">
         <button class="add-new-friend-button" type="submit">Add a new friend</a></button>
       </form>
     </div>
+    <div class="col-xs-1 col-sm-2 col-md-2 col-lg-4 sidebar">
 
+    </div>
   </div>
 </div>

@@ -1,4 +1,5 @@
-<h1>Your list of friends</h1>
+@Html.Partial("friend-form.cshtml")
+<h1>You've added a contact to the list of friends!</h1>
 <div class="row">
   <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 side-bar">
   </div>
@@ -12,8 +13,19 @@
     <ul>
   </div>
   <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 side-bar">
+
+  </div>
+  <div class="row">
+    <div class="col-md-5">
+
+    </div>
+    <div class="col-md-2">
+      <form action="/contacts_deleted">
+        <button type="submit" class="clear-all-friends-button">Clear All Friends</button>
+      </form>
+    </div>
+    <div class="col-md-5">
+
+    </div>
   </div>
 </div>
-<h3>Would you like to add another friend?</h3>
-@Html.Partial("friend-form.cshtml")
-<ul>
